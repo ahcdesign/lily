@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Spectral&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+/*-Skip to Content-*/
+
+a.skip {
+    position: relative;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+    
+a.skip:focus, a.skip:active, a.skip:hover {
+    left: 0; 
+    top: 0;
+    width: auto; 
+    height: auto; 
+    overflow: visible; 
+}
+    
+/*-Typography-*/
+
+p {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: normal;
+    line-height: 25px;
+    background-color: #474747;
+    width: 100%;
+}	
+
+p a:visited {
+    color: #f65d0a;
+}
+
+/*-Navigation Bar-*/
+
+nav {
+    width: 100%;
+    height: 50px;
+}
+
+.navbar-logo {
+    height: 75px;
+    width: 75px;
+}
+
+.navbar-left {
+    padding-left: 25px;
+    float: left;
+    height: 100%;
+}
+
+.navbar-logo {
+    font-family: 'Spectral', serif;
+    font-size: 60px;
+    margin-bottom: -15px;
+    color: #f65d0a;
+}
+
+.navbar-right {
+    font-size: 32px;
+    float: right;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.navbar-right a {
+    padding: 10px;
+    color: #959595;
+}
+
+.fa-caret-right {
+    color: #f65d0a;
+}
+
+/* Main Screen */
+
+.homebg {
+	background-image: url('../images/asianfemales.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    height: 80%;
+    width: 100%;
+}
+
+.homemain {
+    position: relative;
+    height: 100%;
+}
+
+.login {
+    float: right;
+    padding: 25px;
+    font-size: 35px;
+    text-decoration: underline;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-top: 25px;
+    background-color: #959595;
+    color: #ffffff;
+}
+
+.footerinfo {
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    background-color: #474747; 
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*-Footer-*/
+
+.footerbody {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 75px;
+    text-align: center;
+}
+
+/*-Social Media-*/
+
+.social-icon {
+    position: relative;
+    padding: 1vh;
+    margin: 0;
+    text-align: center;
+    background-color: #474747;
+}
+
+.social-icon li {
+    color: #454545;
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    background: #ffffff;
+    border-radius: 100%;
+    color: #454545;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    margin: 0px 6px 10px 6px;
+}
+
+.social-icon li a:hover {
+    background: #9B9B9B;
+    color: #ffffff;
+    transform: scale(1.1);
+    top: -5px;
+}
+
+/*-Mobile Responsive styles-*/
+
+@media screen and (max-width: 800px) {
+
+    /***** VERTICAL NAVIGATOR *****/
+
+    .navbar-left {
+        float: none;
+    }
+    .homebg {
+        height: 80%;
+        min-width: auto;
+    }
+    .homemain {
+        margin-top: 100px;
+    }
+    .login {
+        float: none;
+        padding-left: 125px;
+        font-size: 35px;
+        text-decoration: underline;
+        background-color: #959595;
+        color: #ffffff;
+    }
+
+    .footerbody {
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 150px;
+    }
+}
