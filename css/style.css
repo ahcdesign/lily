@@ -130,12 +130,19 @@ nav {
     padding-right: 10px;
 }
 
+#footerinfosubtext {
+    font-style: normal;
+    padding: 5px;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
 /*-Footer-*/
 
 .footerbody {
     width: 100%;
     margin-top: 50px;
-    padding-top: 75px;
+    padding-top: 375px;
     text-align: center;
 }
 
